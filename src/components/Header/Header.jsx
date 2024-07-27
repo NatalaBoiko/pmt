@@ -43,11 +43,11 @@ const Header = () => {
           />
         </Link>
 
-        <ul className={styles.navLinksList}>
+        {/* <ul className={styles.navLinksList}>
           {navLinksData.map((item) => (
             <li key={item.id}>{item.title}</li>
           ))}
-        </ul>
+        </ul> */}
 
         <button
           className={

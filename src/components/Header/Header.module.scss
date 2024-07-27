@@ -1,10 +1,7 @@
 @import "../../app/variables";
 
-.header {
-  position: relative;
-}
-
 .container {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,15 +18,6 @@
   @media screen and (min-width: $desktop) {
     width: 200px;
     height: 36px;
-  }
-}
-
-.navLinksList {
-  display: none;
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    column-gap: 98px;
   }
 }
 
@@ -60,10 +48,12 @@
 .burgerOpen {
   &::before {
     scale: 200;
-    background-image: url("/lines.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    // background-image: url("/lines.svg");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    // width: 100vh;
+    // height: 100vh;
   }
 }
 
@@ -75,7 +65,7 @@
 
 .navLinks {
   position: absolute;
-  transform: translateX(100vw);
+  // transform: translateX(100vw);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -83,8 +73,33 @@
   color: white;
   font-size: 20px;
   top: 140px;
+  right: 0;
+  left: auto;
+  overflow: hidden;
+  width: 1px;
 }
 
 .navLinksOpen {
-  transform: translateX(10vw);
+  // transform: translateX(10vw);
+  width: fit-content;
+  left: 10px;
+  right: auto;
 }
+
+// .navLinks {
+//   position: fixed; // or absolute, depending on layout
+//   right: -100vw; // Move it entirely out of view initially
+//   top: 140px;
+//   transition: transform 0.5s ease-in-out;
+//   z-index: 10;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 24px;
+//   color: white;
+//   font-size: 20px;
+// }
+
+// .navLinksOpen {
+//   right: 0; // Bring it back to the view
+//   transform: none; // Reset transform
+// }

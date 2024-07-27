@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={satoshiRegular.variable}>
-      <body>
+      <body style={{ overflowX: "hidden", overflowY: "auto" }}>
         <Header />
         <main>{children}</main>
         <Footer />

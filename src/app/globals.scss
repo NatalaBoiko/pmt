@@ -3,21 +3,12 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-  // -moz-box-sizing: border-box;
-  // -o-box-sizing: border-box;
-  // -ms-box-sizing: border-box;
   box-sizing: border-box;
-
   padding: 0;
   margin: 0;
 
-  -webkit-transition-duration: 250ms;
-  // -moz-transition-duration: 250ms;
-  // -o-transition-duration: 250ms;
-  // -ms-transition-duration: 250ms;
   transition-duration: 250ms;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 *::before,
@@ -39,13 +30,14 @@ body {
   font-weight: 400;
   color: $colorDarkBlue;
   background-color: $colorWhite;
-  overflow-x: hidden;
+  position: relative;
 }
 
 header,
 footer {
   width: inherit;
   max-width: inherit;
+  max-width: 100%;
   // padding-left: 20px;
   // padding-right: 20px;
 }
@@ -90,10 +82,10 @@ main {
 //   flex-direction: column;
 // }
 
-// ul,
-// ol {
-//   list-style: none;
-// }
+ul,
+ol {
+  list-style: none;
+}
 
 a {
   display: inline-block;
@@ -102,9 +94,9 @@ a {
   cursor: pointer;
 }
 
-// button {
-//   cursor: pointer;
-// }
+button {
+  cursor: pointer;
+}
 
 // .styleH1 {
 //   font-weight: 400;
