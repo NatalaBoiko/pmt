@@ -36,10 +36,9 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: aqua;
     border-radius: 50%;
-    top: 32%;
-    left: 32%;
+    top: 50%;
+    left: 50%;
     background-color: $colorDarkBlue;
     z-index: -1;
   }
@@ -48,12 +47,6 @@
 .burgerOpen {
   &::before {
     scale: 200;
-    // background-image: url("/lines.svg");
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center;
-    // width: 100vh;
-    // height: 100vh;
   }
 }
 
@@ -64,8 +57,8 @@
 }
 
 .navLinks {
-  position: absolute;
-  // transform: translateX(100vw);
+  // position: absolute;
+  transform: translateX(100vw);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -73,33 +66,9 @@
   color: white;
   font-size: 20px;
   top: 140px;
-  right: 0;
-  left: auto;
-  overflow: hidden;
-  width: 1px;
+  position: fixed;
 }
 
 .navLinksOpen {
-  // transform: translateX(10vw);
-  width: fit-content;
-  left: 10px;
-  right: auto;
+  transform: translateX(10vw);
 }
-
-// .navLinks {
-//   position: fixed; // or absolute, depending on layout
-//   right: -100vw; // Move it entirely out of view initially
-//   top: 140px;
-//   transition: transform 0.5s ease-in-out;
-//   z-index: 10;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 24px;
-//   color: white;
-//   font-size: 20px;
-// }
-
-// .navLinksOpen {
-//   right: 0; // Bring it back to the view
-//   transform: none; // Reset transform
-// }

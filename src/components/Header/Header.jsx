@@ -10,6 +10,8 @@ import { useState } from "react";
 const Header = () => {
   const [burgerMenu, setBurgermenu] = useState(false);
   const [navLinks, setNavLinks] = useState(false);
+  // console.log(document.body.style.overflowX == "hidden");
+  // console.log(document.body.style.overflowY == "hidden");
 
   const toggleBurgerMenu = () => {
     if (!burgerMenu) {

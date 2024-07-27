@@ -8,7 +8,7 @@
   margin: 0;
 
   transition-duration: 250ms;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 *::before,
@@ -30,24 +30,17 @@ body {
   font-weight: 400;
   color: $colorDarkBlue;
   background-color: $colorWhite;
-  position: relative;
 }
 
 header,
 footer {
   width: inherit;
   max-width: inherit;
-  max-width: 100%;
-  // padding-left: 20px;
-  // padding-right: 20px;
 }
 
 main {
   flex: 1;
   width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 // section {
