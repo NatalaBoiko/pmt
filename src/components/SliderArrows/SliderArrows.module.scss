@@ -1,0 +1,19 @@
+@import "../../app/variables";
+
+.container {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  column-gap: 14px;
+}
+
+.sliderBtn {
+  border: transparent;
+  background-color: transparent;
+}
+
+.sliderArrow {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,67 @@
+@import "../../app/variables";
+
+.section {
+  padding: 30px 20px 95px;
+  color: $colorWhite;
+  background-color: $colorDarkBlue;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.careersTitle {
+  margin-bottom: 91px;
+}
+
+.careersOffices {
+  margin-bottom: 14px;
+}
+
+.officesLine {
+  margin-bottom: 12px;
+}
+
+.officesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 31px;
+}
+
+.careersPhoto {
+  object-fit: cover;
+  border-radius: 13px;
+  // overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.awards {
+  padding: 20px;
+  color: $colorDarkBlue;
+  background-color: $colorAliceBlue;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.iconPlanet {
+  width: 39px;
+  height: 39px;
+  margin-bottom: 122px;
+}
+
+.careersLink {
+  display: flex;
+  align-items: center;
+}
+
+.linkText {
+  text-decoration: underline;
+}
+
+.arrow {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: $colorActive;
+}

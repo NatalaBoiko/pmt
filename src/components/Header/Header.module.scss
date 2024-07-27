@@ -1,0 +1,90 @@
+@import "../../app/variables";
+
+.header {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 20px 20px;
+  background: linear-gradient($colorWhite, $colorWhite);
+}
+
+.logoLink {
+  position: relative;
+  width: 137px;
+  height: 25px;
+
+  @media screen and (min-width: $desktop) {
+    width: 200px;
+    height: 36px;
+  }
+}
+
+.navLinksList {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    column-gap: 98px;
+  }
+}
+
+.burgerBtn {
+  border: transparent;
+  outline: none;
+  position: relative;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    top: 32%;
+    left: 32%;
+    background-color: $colorDarkBlue;
+    z-index: -1;
+  }
+}
+
+.burgerOpen {
+  &::before {
+    scale: 200;
+    background-image: url("/lines.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+.navLinks {
+  position: absolute;
+  transform: translateX(100vw);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: white;
+  font-size: 20px;
+  top: 140px;
+}
+
+.navLinksOpen {
+  transform: translateX(10vw);
+}

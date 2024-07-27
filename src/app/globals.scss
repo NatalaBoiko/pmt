@@ -1,0 +1,179 @@
+@import "./_variables";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
+  // -o-box-sizing: border-box;
+  // -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+
+  -webkit-transition-duration: 250ms;
+  // -moz-transition-duration: 250ms;
+  // -o-transition-duration: 250ms;
+  // -ms-transition-duration: 250ms;
+  transition-duration: 250ms;
+  // outline: 1px solid red;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--regular);
+  font-weight: 400;
+  color: $colorDarkBlue;
+  background-color: $colorWhite;
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  width: inherit;
+  max-width: inherit;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+
+// section {
+//   width: 100%;
+//   padding: 0px 20px;
+
+//   @media screen and (min-width: $desktop) {
+//     padding: 40px 56px;
+//   }
+// }
+
+// section:not(:last-child) {
+//   margin-bottom: 70px;
+// }
+
+// .paintedSection {
+//   background-color: $colorDarkBlue;
+
+//   @media screen and (min-width: $desktop) {
+//     margin-left: 20px;
+//     margin-right: 20px;
+//   }
+// }
+
+// .contentContainer {
+//   width: 100%;
+//   height: 100%;
+//   max-width: 1800px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// ul,
+// ol {
+//   list-style: none;
+// }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+// button {
+//   cursor: pointer;
+// }
+
+// .styleH1 {
+//   font-weight: 400;
+//   font-size: 45px;
+//   line-height: 0.97;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 60px;
+//     line-height: 1.12;
+//   }
+// }
+
+// .styleH2 {
+//   font-weight: 400;
+//   font-size: 26px;
+//   line-height: 1.2;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 34px;
+//     line-height: 1.1;
+//   }
+// }
+
+// .styleH3 {
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.35;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 26px;
+//   }
+// }
+
+// .title {
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 1.3;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 24px;
+//   }
+// }
+
+// .body {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.35;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 22px;
+//   }
+// }
+
+// .bodySmall {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.15;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 16px;
+//     line-height: 1.4;
+//   }
+// }
+
+// .button {
+//   font-weight: 400;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 20px;
+//     line-height: 1.4;
+//   }
+// }
