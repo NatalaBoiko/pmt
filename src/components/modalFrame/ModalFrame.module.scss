@@ -1,0 +1,11 @@
+@import "../../app/variables";
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 255, 212, 0.429);
+  z-index: 100;
+}

@@ -29,7 +29,8 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 150;
+  margin-left: auto;
 
   &::before {
     content: "";
@@ -41,6 +42,10 @@
     left: 50%;
     background-color: $colorDarkBlue;
     z-index: -1;
+  }
+
+  @media screen and (min-width: $laptop) {
+    display: none;
   }
 }
 
@@ -56,6 +61,13 @@
   z-index: 1;
 }
 
+// .navLinksWrapp {
+//   width: 10px;
+//   height: 10px;
+// }
+// .navLinksWrappBig {
+// }
+
 .navLinks {
   // position: absolute;
   transform: translateX(100vw);
@@ -63,12 +75,23 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  color: white;
+  color: $colorWhite;
   font-size: 20px;
   top: 140px;
   position: fixed;
+  z-index: 200;
+  @media screen and (min-width: 1024px) {
+    position: static;
+    color: $colorDarkBlue;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 }
 
 .navLinksOpen {
   transform: translateX(10vw);
+}
+
+.contactBtn {
+  margin-left: 20px;
 }

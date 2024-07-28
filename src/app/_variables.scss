@@ -1,9 +1,12 @@
 $mobile: "375px";
+$tablet: "768px";
+$laptop: "1024px";
 $desktop: "1920px";
 
 // @media screen and (min-width: $mobile) {}
-
-// @media screen and (min-width: $desktop) { }
+// @media screen and (min-width: $tablet) {}
+// @media screen and (min-width: $laptop) {}
+// @media screen and (min-width: $desktop) {}
 
 $colorWhite: #ffffff;
 $colorDarkBlue: #18306c;

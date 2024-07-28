@@ -2,6 +2,7 @@ import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import localFont from "next/font/local";
+import { SiteProvider } from "@/context/siteContext";
 
 const satoshiRegular = localFont({
   src: "../fonts/Satoshi-Regular.woff2",
@@ -17,11 +18,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={satoshiRegular.variable}>
-      <body style={{ overflowX: "hidden", overflowY: "auto" }}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <SiteProvider>
+        {/* <body style={{ overflowX: "hidden" }}> */}
+        <body>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </body>
+      </SiteProvider>
     </html>
   );
 }
