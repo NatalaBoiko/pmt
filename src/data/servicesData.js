@@ -7,31 +7,35 @@ export const servicesData = [
       "Our mission is to accomplish great things, exceed our clients’ expectations and meet the challenges of our growing infrastructure through practical engineering solutions, innovation, and hard work.",
       "Our diverse group of Professional Engineers and Designers lead the way by providing a full range of  services in roads and highways: hands - on design management of roadway design, traffic control plans, schematic design, minor and major bridge design, traffic engineering studies, traffic demand modeling, intelligent transportation systems, signing and pavement markings, roadway hydraulics, from minor crossings through major highways and interchanges across the state, including the reconstruction of the $1.5 billion US 290 corridor.",
     ],
-    img: "/images/serviceHighways.webp",
+    img: "/images/serviceHighways.avif",
     href: "/",
   },
   {
     id: "Transportation",
     titles: ["Transportation", "Planning"],
-    img: "/images/serviceTransportation.webp",
+    img: "/images/serviceHighways2.avif",
+
     href: "/",
   },
   {
     id: "Design",
     titles: ["Design", "Build Services"],
-    img: "/images/serviceDesign.webp",
+    img: "/images/serviceHighways3.avif",
+
     href: "/",
   },
   {
     id: "Water",
     titles: ["Water"],
-    img: "/images/serviceWater.webp",
+    img: "/images/serviceHighway4.avif",
+
     href: "/",
   },
   {
     id: "Bridges",
     titles: ["Bridges"],
-    img: "/images/serviceBridges.webp",
+    img: "/images/serviceHighways5.avif",
+
     href: "/",
   },
   {
@@ -43,7 +47,7 @@ export const servicesData = [
       "We assist our clients by providing a comprehensive array of services aimed to facilitate construction from opening to final completion including Construction Management and Inspection Services, Scheduling and Mitigation Strategies, and Public Involvement and Community Outreach services.OTHON provides comprehensive constructability review for all design components and recommendation of the contractor’s schedule, troubleshooting field problems, review of contractor’s change orders, coordination with agencies and adjacent projects, and time impact analysis.",
       "Through effective management and coordination from project kick- off to close - out, our Construction Services team is committed to delivering projects on time and under budget.",
     ],
-    img: "/images/serviceConstruction.webp",
+    img: "/images/serviceHighways6.avif",
     href: "/",
   },
 ];

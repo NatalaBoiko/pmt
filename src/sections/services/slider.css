@@ -1,0 +1,38 @@
+.servisecSwiper {
+  width: 100%;
+}
+
+.servisecSwiper .swiper-button-next {
+  top: 12px;
+  right: 0;
+  left: auto;
+  bottom: auto;
+}
+.servisecSwiper .swiper-button-next::after {
+  content: url("/sliderArrRight.svg");
+}
+
+.servisecSwiper .swiper-button-prev {
+  top: 12px;
+  right: 56px;
+  left: auto;
+  bottom: auto;
+}
+.servisecSwiper .swiper-button-prev::after {
+  content: url("/sliderArrLeft.svg");
+  /* content: url("/sprite.svg#icon-sliderArrLeft");
+  font-size: 20px; */
+}
+/* .servisecSwiper .swiper-scrollbar {
+  height: 1px;
+  background-color: #18306c56;
+
+  width: 100%;
+  position: absolute;
+  top: 43px;
+}
+
+.servisecSwiper .swiper-scrollbar .swiper-scrollbar-drag {
+  height: 1px;
+  background-color: #f2683c;
+} */

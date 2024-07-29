@@ -1,0 +1,50 @@
+@import "../../app/variables";
+
+.title {
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: $colorActive;
+}
+
+.scrollbarWrapp {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(24, 48, 108, 0.4);
+
+  position: absolute;
+  top: 48px;
+}
+
+.scrollbar {
+  height: 2px;
+  background-color: $colorActive;
+}
+
+.slideContent {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 200px; */
+}
+
+.slideTitle {
+  font-size: 24px;
+  color: #18306c;
+  margin-bottom: 36px;
+}
+
+.slideText {
+  position: relative;
+  padding: 48px 20px;
+  color: $colorWhite;
+  z-index: 1;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(24, 48, 108, 0.7);
+    z-index: -1;
+  }
+}
