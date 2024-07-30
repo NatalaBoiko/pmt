@@ -1,5 +1,8 @@
 .servisecSwiper {
   width: 100%;
+  @media screen and (min-width: 1024px) {
+    flex: 2;
+  }
 }
 
 .servisecSwiper .swiper-button-next {
@@ -7,6 +10,10 @@
   right: 0;
   left: auto;
   bottom: auto;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 .servisecSwiper .swiper-button-next::after {
   content: url("/sliderArrRight.svg");
@@ -17,6 +24,9 @@
   right: 56px;
   left: auto;
   bottom: auto;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 .servisecSwiper .swiper-button-prev::after {
   content: url("/sliderArrLeft.svg");

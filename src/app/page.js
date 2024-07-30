@@ -1,6 +1,6 @@
 import Services from "@/sections/services/Services";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <Services />
