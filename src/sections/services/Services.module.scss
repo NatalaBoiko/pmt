@@ -53,8 +53,12 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    font-size: 34px;
-    opacity: 0.5;
+
+    & li {
+      font-size: 34px;
+      opacity: 0.5;
+      cursor: pointer;
+    }
   }
 }
 

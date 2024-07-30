@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./Services.module.scss";
 import { servicesData } from "../../data/servicesData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +13,7 @@ import Image from "next/image";
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const slideCount = servicesData.length;
+  const swiperRef = useRef(null); // Ref for Swiper
 
   const calculateScrollbarWidth = (index) => {
     // Calculate the width of the scrollbar based on the current index
@@ -28,17 +29,35 @@ const Services = () => {
     }
   };
 
+  const goToSlide = (index) => {
+    // Use the swiper instance to navigate to the specified slide
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideToLoop(index); // Use slideToLoop for looping Swiper
+    }
+  };
+
   return (
     <section>
       <div className="container">
         <h2 className={styles.title}>Services</h2>
         <div className={styles.contentWrapp}>
           <ul className={styles.servicesTitles}>
-            {servicesData.map((el) => {
-              return <li key={el.id}>{el.titles}</li>;
+            {servicesData.map((el, index) => {
+              return (
+                <li
+                  key={el.id}
+                  className={
+                    activeIndex === index ? styles.servicesTitlesActive : ""
+                  }
+                  onClick={() => goToSlide(index)}
+                >
+                  {el.titles}
+                </li>
+              );
             })}
           </ul>
           <Swiper
+            ref={swiperRef}
             navigation={true}
             loop={true}
             scrollbar={{ draggable: true, hide: false }}
