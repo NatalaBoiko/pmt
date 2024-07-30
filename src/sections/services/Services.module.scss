@@ -56,10 +56,14 @@
 
     & li {
       font-size: 34px;
-      opacity: 0.5;
+
       cursor: pointer;
     }
   }
+}
+
+.servicesTitlesPassive {
+  opacity: 0.5;
 }
 
 .servicesTitlesActive {

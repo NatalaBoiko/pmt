@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Services.module.scss";
 import { servicesData } from "../../data/servicesData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,7 +47,9 @@ const Services = () => {
                 <li
                   key={el.id}
                   className={
-                    activeIndex === index ? styles.servicesTitlesActive : ""
+                    activeIndex === index
+                      ? styles.servicesTitlesActive
+                      : styles.servicesTitlesPassive
                   }
                   onClick={() => goToSlide(index)}
                 >
